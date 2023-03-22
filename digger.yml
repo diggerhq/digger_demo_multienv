@@ -11,16 +11,3 @@ projects:
   workspace: default
   terraform_version: v0.11.0
   workflow: myworkflow
-workflows:
-  myworkflow:
-    plan:
-      steps:
-      - run: my-custom-command arg1 arg2
-      - init
-      - plan:
-          extra_args: ["-backend-config", "my-state-file"]
-      - run: my-custom-command arg1 arg2
-    apply:
-      steps:
-      - run: echo hi
-      - apply
