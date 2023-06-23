@@ -2,7 +2,7 @@ resource "null_resource" "test_dev" {
 
 }
 
-resource "null_resource" "test_de222222" {
+resource "null_resource" "test_de22222222" {
 
 }
 
