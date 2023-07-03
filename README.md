@@ -14,3 +14,4 @@ To see Digger, you need:
 5. A plan output will be also posted to the PR
 6. Create another PR with a different change (under the same project)
 7. A "failed to acquire lock" comment will be posted to the PR
+
