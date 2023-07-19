@@ -11,4 +11,4 @@ resource "null_resource" "test_de333" {
 }
 resource "null_resource" "test1" {
 
-}
+} 
