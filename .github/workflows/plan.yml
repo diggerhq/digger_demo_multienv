@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: digger run
-        uses: keivinonline/digger@develop
+        uses: keivinonline/digger@feature/add-github-reactions-to-comments
         # uses: diggerhq/digger@develop
         with:
           setup-aws: true
