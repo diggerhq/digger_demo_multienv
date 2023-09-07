@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: no-aws-creds-runner
 
     steps:
       - name: digger run
