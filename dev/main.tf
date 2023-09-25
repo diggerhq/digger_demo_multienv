@@ -5,6 +5,6 @@ resource "null_resource" "tesdsadast" {
 
 }
 
-resource "null_resource" "test123" {
+resource "null_resource" "tesst123" {
 
 }
