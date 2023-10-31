@@ -15,12 +15,14 @@ jobs:
 
     steps:
       - name: digger run
-        uses: diggerhq/digger@v0.1.31
+        uses: nerdrobot/digger@develop
         with:
-          setup-aws: true
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+          setup-oci: true
+          oci-cli-user: ${{ secrets.OCI_CLI_USER }}
+          oci-cli-tenancy: ${{ secrets.OCI_CLI_TENANCY }}
+          oci-cli-fingerprint: ${{ secrets.OCI_CLI_FINGERPRINT }}
+          oci-cli-key-content: ${{ secrets.OCI_CLI_KEY_CONTENT }}
+          oci-cli-region: ${{ secrets.OCI_CLI_REGION }}
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
