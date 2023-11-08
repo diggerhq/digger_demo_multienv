@@ -13,12 +13,12 @@ provider "aws" {
 
 variable "bucket_id" {
   type = string
-  default = "digger-s3backend-quickstart-aws"
+  default = "snapsmart-digger"
 }
 
 variable "dynamo_lock_table_id" {
   type = string
-  default = "digger-locktable-quickstart-aws"
+  default = "snapsmart-digger"
 }
 
 resource "aws_s3_bucket" "example" {
