@@ -1,10 +1,8 @@
 name: CI
 
 on:
-  push:
-    branches: [ "motatoes-patch-5" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "digger-test" ]
     types: [ closed, opened, synchronize, reopened ]
   issue_comment:
     types: [created]
