@@ -1,6 +1,8 @@
 name: CI
 
 on:
+  push:
+    branches: [ "motatoes-patch-5" ]
   pull_request:
     branches: [ "main" ]
     types: [ closed, opened, synchronize, reopened ]
