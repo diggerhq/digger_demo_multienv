@@ -2,7 +2,6 @@ name: CI
 
 on:
   pull_request:
-    branches: [ "digger-test" ]
     types: [ closed, opened, synchronize, reopened ]
   issue_comment:
     types: [created]
